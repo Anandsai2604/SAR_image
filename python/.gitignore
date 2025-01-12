@@ -1,0 +1,23 @@
+cd D:\project\SAR_IMAGE\python
+echo "# Python-specific rules
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.log
+*.tmp
+.DS_Store
+
+# Ignore virtual environments
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Debugging files
+*.swp
+*.swo
+.idea/
+.vscode/" > .gitignore
