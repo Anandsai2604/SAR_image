@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-router-dom';
+import image from "D:\\project\\
+SAR_IMAGE\\frontend\\src\\components\\remotesensing.webp";
 
 function Home() {
   const fadeIn = useSpring({
@@ -13,6 +15,14 @@ function Home() {
     <animated.div style={fadeIn} className="container py-5">
       <h1 className="text-center mb-5">SAR Image Colorization</h1>
       
+      {/* SAR Image and Description */}
+      <div className="text-center mb-4">
+      <img src={image} alt="SAR Image Example" className="img-fluid"  style={{ maxWidth: '500px', maxHeight: '300px', objectFit: 'cover' }}/>
+        <p className="mt-3">
+          Synthetic Aperture Radar (SAR) is used to capture detailed images of the earth's surface, even under adverse weather conditions. The colorization applied to this image enhances the visual understanding of the terrain and features.
+        </p>
+      </div>
+
       {/* First Box */}
       <div className="card mb-4">
         <div className="card-body">
@@ -34,8 +44,9 @@ function Home() {
           </Link>
         </div>
       </div>
+      
     </animated.div>
   );
 }
 
-export default Home;
+export default Home;
