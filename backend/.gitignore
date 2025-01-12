@@ -1,13 +1,4 @@
-cd D:\project\SAR_IMAGE\backend
-echo "# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-
-# misc
-.rgbImages
-.sarImages
-.env
-.DS_Store
-
-npm-debug.log*" > .gitignore
+echo "node_modules/" > backend/.gitignore
+echo "uploads/" >> backend/.gitignore
+echo "rgbImages" >> backend/.gitignore
+echo "*.log" >> backend/.gitignore
