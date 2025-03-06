@@ -1,4 +1,0 @@
-echo "node_modules/" > backend/.gitignore
-echo "uploads/" >> backend/.gitignore
-echo "rgbImages" >> backend/.gitignore
-echo "*.log" >> backend/.gitignore

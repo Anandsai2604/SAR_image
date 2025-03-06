@@ -1,4 +1,0 @@
-echo "__pycache__/" > python/.gitignore
-echo "*.tmp" >> python/.gitignore
-echo "*.log" >> python/.gitignore
-
